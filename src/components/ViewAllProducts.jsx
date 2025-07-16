@@ -14,13 +14,14 @@ const ViewAllProducts = () => {
       <div className="container">
         <ProductNavBar />
         <div className="row">
+          <center><h1>Product Details</h1></center>
           <div className="col col-12 col-sm-12 col-md-12 col-lg-12 col-xl-12 col-xxl-12">
             <div className="row g-3">
               {productData.map(
                 (value, index) => {
                   return (
                     <div className="col col-12 col-sm-6 col-md-4 col-lg-3 col-xl-3 col-xxl-3">
-                      <div class="card">
+                      <div class="card h-100">
                         <img src={value.image} class="card-img-top" alt={value.name} />
                         <div class="card-body">
                           <h5 class="card-title">{value.name}</h5>
